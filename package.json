@@ -1,0 +1,56 @@
+{
+    "name": "myboilerplate",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": ".",
+    "dependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "axios": "^0.19.2",
+        "bootstrap": "^4.5.0",
+        "husky": "^4.2.5",
+        "jquery": "^3.5.1",
+        "lint-staged": "^10.2.11",
+        "node-sass": "^4.14.1",
+        "popper.js": "^1.16.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.1",
+        "stylelint": "^13.6.1",
+        "stylelint-config-standard": "^20.0.0"
+    },
+    "scripts": {
+        "myscripts": "yarn test -u && yarn lint:js && yarn lint:scss && git add --all",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --watchAll=false --silent",
+        "lint:scss": "stylelint 'src/**/*.scss' --syntax scss --fix",
+        "lint:js": "eslint './src/**/*.{js,jsx}' --fix"
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,json}": [
+            "yarn lint:js"
+        ],
+        "src/**/*.{css,scss}": [
+            "yarn lint:scss"
+        ]
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing PublicRoute Component Should render HomePage in the main path 1`] = `
+<div
+  class="container p-0"
+>
+  <div
+    class="row p-5"
+  >
+    <div
+      class="col text-center m-auto"
+    >
+      <h1
+        class="text-success pb-4"
+      >
+        <strong>
+          HEY !
+        </strong>
+      </h1>
+      <button
+        class="text-center outButton"
+      >
+        Log in
+      </button>
+    </div>
+  </div>
+</div>
+`;

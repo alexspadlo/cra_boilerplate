@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Dashboard Component Do not render without the props 1`] = `
+<div
+  class="container p-0"
+>
+  <div
+    class="row p-5"
+  >
+    <div
+      class="col text-center m-auto"
+    >
+      <h1
+        class="text-success pb-4"
+      >
+        <strong>
+          HEY YOU ARE IN A PRIVATE ROUTE!!!
+        </strong>
+      </h1>
+      <button
+        class="outButton text-center"
+      >
+        Log OUT
+      </button>
+    </div>
+  </div>
+</div>
+`;

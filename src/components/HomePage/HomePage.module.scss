@@ -1,0 +1,16 @@
+.outButton {
+  padding: 5px 20px;
+  color: black;
+  background-color: rgb(154, 230, 158);
+  border: none;
+  border-radius: 10px;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: white;
+    background-color: rgb(236, 93, 11);
+  }
+}
